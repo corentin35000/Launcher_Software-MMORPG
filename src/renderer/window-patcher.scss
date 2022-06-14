@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  color: white;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.text {
+  display: block;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  position: absolute;
+  text-align: center;
+  pointer-events: none;
+}
+
+#txtFile {
+  bottom: 35px;
+  left: 35px;
+}
+
+#txtTotal {
+  bottom: 14px;
+  left: 35px;
+}
+
+#txtStatus {
+  bottom: 54px;
+  left: 99px;
+  font-size: 10.6px;
+  width: 303px;
+  height: 20px;
+  line-height: 20px;
+}
+
+#txtProgress {
+  font-size: 10.6px;
+  width: 401px;
+  height: 20px;
+  line-height: 20px;
+  bottom: 14px;
+  left: 78px;
+  z-index: 1;
+}
+
+#fileProgress {
+  height: 7px;
+  width: 400px;
+  display: flex;
+  position: absolute;
+  bottom: 40px;
+  left: 80px;
+}
+
+#fileLeft {
+  background: url('~@/assets/topbar-left.jpg');
+  height: 7px;
+  width: 4px;
+}
+
+#fileMid {
+  height: 7px;
+  width: 393px;
+  display: flex;
+}
+
+#fileBar {
+  background: url('~@/assets/topbar-mid.jpg');
+  height: 100%;
+  width: 0%;
+}
+
+#fileMid:after {
+  content: '';
+  background: url('~@/assets/topbar-right.jpg');
+  height: 100%;
+  width: 4px;
+}
+
+#totalProgress {
+  height: 18px;
+  width: 400px;
+  display: flex;
+  position: absolute;
+  bottom: 15px;
+  left: 80px;
+}
+
+#totalLeft {
+  background: url('~@/assets/totalbar-left.jpg');
+  height: 18px;
+  width: 4px;
+}
+
+#totalMid {
+  height: 18px;
+  width: 393px;
+  display: flex;
+}
+
+#totalBar {
+  background: url('~@/assets/totalbar-mid.jpg');
+  height: 100%;
+  width: 0%;
+}
+
+#totalMid:after {
+  content: '';
+  background: url('~@/assets/totalbar-right.jpg');
+  height: 100%;
+  width: 4px;
+}
